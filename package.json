@@ -1,0 +1,13 @@
+{
+  "name": "headfirstdppracticecode",
+  "version": "1.0.0",
+  "description": "该仓库记录一些在看《Head First 设计模式》书籍时，进行实践的一些代码。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}
