@@ -13,3 +13,9 @@ export class FlyNoWay implements FlyBehavior {
     console.log(`I can't fly`)
   }
 }
+
+export class FlyRocketPowered implements FlyBehavior {
+  fly(): void {
+    console.log(`I'm flying with a rocket!!!`)
+  }
+}

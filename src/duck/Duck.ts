@@ -16,4 +16,12 @@ export abstract class Duck {
   public performQuack(): void {
     this.quackBehavior.quack()
   }
+
+  // 修改行为
+  setFlyBehavior(fb: FlyBehavior) {
+    this.flyBehavior = fb
+  }
+  setQuackBehavior(qb: QuackBehavior) {
+    this.quackBehavior = qb
+  }
 }
