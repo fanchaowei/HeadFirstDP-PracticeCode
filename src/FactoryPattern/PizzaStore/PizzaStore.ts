@@ -6,6 +6,10 @@ import {
   Pizza,
   VeggiePizza,
 } from './Pizza'
+import {
+  ChicagoPizzaIngredientFactory,
+  NYPizzaIngredientFactory,
+} from './PizzaIngredientFactory'
 // import { SimplePizzaFactory } from './PizzaFactory'
 
 // export class PizzaStore {
@@ -56,7 +60,7 @@ export class NYPizzaStore extends PizzaStore {
     } else if (type.includes('pepperoni')) {
       pizza = new PepperoniPizza()
     } else if (type.includes('clam')) {
-      pizza = new ClamPizza()
+      pizza = new ClamPizza(new NYPizzaIngredientFactory())
     } else if (type.includes('veggie')) {
       pizza = new VeggiePizza()
     } else {
@@ -76,7 +80,7 @@ export class ChicagoPizzaStore extends PizzaStore {
     } else if (type.includes('pepperoni')) {
       pizza = new PepperoniPizza()
     } else if (type.includes('clam')) {
-      pizza = new ClamPizza()
+      pizza = new ClamPizza(new ChicagoPizzaIngredientFactory())
     } else if (type.includes('veggie')) {
       pizza = new VeggiePizza()
     } else {
