@@ -1,5 +1,5 @@
 import { Observer } from './Observer'
-
+// 主题的超类
 export class Observable {
   private observers: Observer[] = []
   private isChanged: boolean = false

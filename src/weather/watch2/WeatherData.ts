@@ -1,5 +1,5 @@
 import { Observable } from './Observable'
-
+// 具体主题
 export class WeatherData extends Observable {
   private temperature: number = 0
   private humidity: number = 0
